@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36109.1 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZakupkiWebApp_asp_net_core", "ZakupkiWebApp_asp_net_core\ZakupkiWebApp_asp_net_core.csproj", "{53CFE6A7-3644-40FA-A712-9148C6E999C9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{53CFE6A7-3644-40FA-A712-9148C6E999C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53CFE6A7-3644-40FA-A712-9148C6E999C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53CFE6A7-3644-40FA-A712-9148C6E999C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53CFE6A7-3644-40FA-A712-9148C6E999C9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FE7900A2-6ECF-4E5B-84CA-1EA86D2BF925}
+	EndGlobalSection
+EndGlobal
