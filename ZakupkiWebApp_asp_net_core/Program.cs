@@ -1,7 +1,23 @@
+using Microsoft.EntityFrameworkCore;
+using ZakupkiWebApp_asp_net_core;
+//using ApplicationDbContext;
+//using DbContext;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+
+//var builder = WebApplication.CreateBuilder(args);
+
+// Получаем строку подключения из appsettings.json
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+
+// Регистрация контекста базы данных
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+
 
 var app = builder.Build();
 
