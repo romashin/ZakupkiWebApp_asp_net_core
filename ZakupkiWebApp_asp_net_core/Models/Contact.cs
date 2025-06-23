@@ -25,7 +25,10 @@ namespace ZakupkiWebApp_asp_net_core.Models
 
         [Display(Name = "Введите сообщение")]
         [Required(ErrorMessage = "Вам нужно ввести текст сообщения")]
-        [StringLength(30, ErrorMessage = "Текст менее 30 символов")]
+        [StringLength(1000, MinimumLength = 30, ErrorMessage = "Текст должен содержать минимум 30 символов")]
+        //[StringLength(30, ErrorMessage = "Текст менее 30 символов")]
         public string Message { get; set; }
+
+        public DateTime SubmittedAt { get; set; } = DateTime.Now;
     }
 }
